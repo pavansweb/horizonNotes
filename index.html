@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study App</title>
+    <link rel="stylesheet" href="style.css">
+    <link id="subjectStyle" rel="stylesheet" href="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <button id="backButton" onclick="showMenu()">↺</button>
+        <h1>Horizon Notes</h1>
+        <div class="menu" id="menu">
+            <button onclick="loadSubject('physics')">Physics</button>
+            <button onclick="loadSubject('chemistry')">Chemistry</button>
+            <button onclick="loadSubject('biology')">Biology</button>
+            <button onclick="loadSubject('maths')">Maths</button>
+            <button onclick="loadSubject('history_civics')">History & Civics</button>
+            <button onclick="loadSubject('geography')">Geography</button>
+            <button onclick="loadSubject('kannada')">Kannada</button>
+        </div>
+        <div id="content">
+            <p>Welcome to the Study App. Select a subject to get started.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
