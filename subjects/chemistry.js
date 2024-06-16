@@ -16,16 +16,12 @@ function showSubjectContent(container) {
 function loadLesson(lesson) {
     let content = '';
     switch (lesson) {
-        case 'lesson1':
-            content = `
+        // case 'lesson1':
+        //     content = `
                
-            `;
-            break;
-        case 'lesson2':
-            content = `
-                
-            `;
-            break;
+        //     `;
+        //     break;
+        
         // Add cases for other lessons
 
         default:

@@ -31,6 +31,12 @@ body {
     margin-top: 20px;
 }
 
+#by {
+    margin-top: -15px;
+    margin-left: 7rem;
+    font-size: 1rem;
+}
+
 h1 {
     margin-bottom: 20px;
     font-size: 2em;
@@ -101,14 +107,14 @@ h1 {
 }
 
 .lesson-menu button {
-    width: fit-content;
+    width: 50%;
     background-color: #3498db;
     color: white;
     padding: 10px 20px;
     text-align: left;
     border: none;
     border-radius: 8px;
-    font-size: 1em;
+    font-size: 1.2em;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -175,12 +181,15 @@ h1 {
     }
 
     h1 {
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
 
     .menu button {
         padding: 10px 0;
-        font-size: 0.9em;
+        font-size: 1.2em;
+    }
+    .lesson-menu button {
+        width: 80%;
     }
 
     #backButton {

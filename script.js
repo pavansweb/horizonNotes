@@ -9,7 +9,7 @@ function loadSubject(subject) {
     menu.style.display = 'none';
     backButton.style.display = 'block';
     spinner.style.display = 'block';
-
+    
     // Load subject content
     loadSubjectContent(subject);
 
@@ -27,6 +27,7 @@ function loadSubjectContent(subject) {
     script.onload = () => {
         // Hide spinner once content is loaded
         spinner.style.display = 'none';
+        document.querySelector('#by').style.display = 'none';
 
         // Assuming showSubjectContent(subjectContent) is defined in each subject's JS file
         if (typeof showSubjectContent === 'function') {
@@ -44,10 +45,11 @@ function loadSubjectContent(subject) {
 
 function showMenu() {
     // Clear content, show menu, and hide spinner
-    content.innerHTML = `<p>Welcome to the Study App. Select a subject to get started.</p>`;
+    content.innerHTML = `<p> Select a subject to get started.</p>`;
     menu.style.display = 'flex';
     backButton.style.display = 'none';
     spinner.style.display = 'none';
+    document.querySelector('#by').style.display = 'block';
 
     // Remove subject-specific script
     const subjectScripts = document.querySelectorAll('script[src^="subjects/"]');
