@@ -38,12 +38,11 @@ h1 {
     position: absolute;
     top: 15px;
     left: 15px;
-    height: 30px;
-    width: 30px;
+    padding: 10px;
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 50%;
+    border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
 }
