@@ -1,0 +1,210 @@
+/* Global styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    padding: 0 15px;
+    /* Add padding for smaller screens */
+}
+
+.container {
+    position: relative;
+    max-height: 80vh;
+    width: 80%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.8);
+    min-width: 400px;
+    box-sizing: border-box;
+}
+
+.container h1 {
+    margin-top: 20px;
+}
+
+#by {
+    margin-top: -15px;
+    margin-left: 7rem;
+    font-size: 1rem;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+#backButton {
+    display: none;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#backButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.menu button {
+    text-decoration: none;
+    color: white;
+    width: 50%;
+    max-width: 400px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    padding: 12px 0;
+
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu button:hover {
+    background: linear-gradient(135deg, #0056b3, #004080);
+    transform: scale(1.05);
+}
+
+#content {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #666;
+}
+
+.lesson-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.lesson-menu button {
+    width: 50%;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-align: left;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.lesson-menu button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.lesson-menu button:focus {
+    outline: none;
+}
+
+/* Style for lesson content */
+.lesson-content {
+    padding: 20px;
+}
+
+/* Style for images within lesson content */
+.lesson-content img {
+    max-width: 100%;
+    /* Ensure images don't exceed container width */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin: 10px 0;
+    /* Add margin to separate images */
+}
+
+.spinner {
+    display: none;
+    /* Initially hidden */
+    position: relative;
+    /* Use absolute positioning */
+    top: 50%;
+    left: 45%;
+    border: 8px solid #f3f3f3;
+    /* Light grey */
+    border-top: 8px solid #007bff;
+    /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        min-width: 0;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .menu button {
+        padding: 10px 0;
+        font-size: 1.2em;
+    }
+    .lesson-menu button {
+        width: 80%;
+    }
+
+    #backButton {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    #content {
+        font-size: 0.9em;
+    }
+}
+
+@media (min-width: 700px) {
+    .menu {
+        flex-direction: row;
+
+    }
+}
